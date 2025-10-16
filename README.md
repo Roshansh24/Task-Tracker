@@ -9,27 +9,23 @@ Scroll below for sample screenshots
 ---
 
 ## 🧩 Project & Package Structure
-task-tracker/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │   └── com/example/tasktracker/
-│ │ │       ├── TaskTrackerApplication.java # Main class (entry point)
-│ │ │       ├── controller/ # Handles API requests
-│ │ │       │ └── TaskController.java
-│ │ │       ├── model/ # Data models and enums
-│ │ │       │ └── Task.java
-│ │ │       ├── repository/ # JPA repositories
-│ │ │         └── TaskRepository.java
-│ │ │       ├── service/ # Business logic layer
-│ │ │         └── TaskService.java
-│ │ └── resources/
-│ │ ├── application.properties # Database configuration
-│ │ ├── data.sql (optional) # Initial data
-│ │ └── static/ & templates/ (optional)
-│ └── test/ # JUnit tests (future)
-├── pom.xml # Maven dependencies
-└── README.md # Project documentation
+
+- com.example.tasktracker
+  - controller  
+    - TaskController.java → Handles all REST API endpoints  
+  - model  
+    - Task.java → Entity class representing a Task  
+  - repository  
+    - TaskRepository.java → Interface for CRUD database operations  
+  - service  
+    - TaskService.java → Business logic between controller and repository  
+  - TaskTrackerApplication.java → Main Spring Boot application  
+- resources  
+  - application.properties → MySQL connection and JPA configs  
+  - data.sql → (Optional) Initial sample data  
+- pom.xml → Maven build and dependencies  
+- README.md → Documentation and usage guide
+
 
 
 ---
