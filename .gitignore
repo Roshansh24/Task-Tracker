@@ -1,0 +1,29 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# STS / IntelliJ / Eclipse
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# OS-specific
+Thumbs.db
